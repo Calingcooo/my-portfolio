@@ -1,3 +1,8 @@
+// app/layout.js
+import Header from "./components/Header";
+import Navigation from "./components/Navigation";
+import MouseGradient from "./components/MouseGradient/MouseGradient";
+import Content from "./components/Content";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -12,7 +17,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <MouseGradient>
+          <Header />
+          <main className="w-full h-full my-5">{children}</main>
+          <Navigation />
+        </MouseGradient>
+      </body>
     </html>
   );
 }

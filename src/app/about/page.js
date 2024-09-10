@@ -1,11 +1,10 @@
-import React from 'react'
+import React from "react";
+import Content from "../components/Content";
 
 const page = () => {
   return (
-    <div>
-        About
-    </div>
-  )
-}
+      <div className="text-white uppercase">About</div>
+  );
+};
 
-export default page
+export default page;
