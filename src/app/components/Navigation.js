@@ -42,15 +42,15 @@ const Navigation = () => {
   return (
     <div className="flex w-full h-20 mb-16">
       <div className="flex items-center justify-center w-full">
-        <div className="flex justify-evenly items-center bg-black bg-opacity-50 text-white h-full w-1/4 rounded-full">
+        <div className="flex justify-evenly items-center bg-slate-400 dark:bg-gray-700 bg-opacity-50 text-white h-full w-1/4 rounded-full">
           {navContent.map((nav) => {
             return (
               <Tooltip key={nav.id} content={nav.navName} position="top">
                 <div
-                  className="bg-gray-800 hover:bg-gray-500 px-4 py-2 rounded-full flex flex-col items-center hover:-translate-y-2 duration-300 transition-all"
+                  className="bg-gray-300 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-500 px-4 py-2 rounded-full flex flex-col items-center hover:-translate-y-2 duration-300 transition-all"
                   onClick={() => handleNavClick(nav.link)}
                 >
-                  <span className="text-slate-200 font-bold cursor-pointer">
+                  <span className="text-slate-800 dark:text-slate-200 font-bold cursor-pointer">
                     {nav.navIcon}
                   </span>
                 </div>

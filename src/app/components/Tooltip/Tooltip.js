@@ -18,7 +18,7 @@ const Tooltip = ({ children, content, position = "top" }) => {
 
       {isVisible && (
         <div
-          className={`absolute z-10 rounded-lg bg-gray-700 text-white text-sm px-3 py-2 shadow-md whitespace-nowrap ${
+          className={`absolute z-10 rounded-lg bg-gray-300 dark:bg-gray-700 text-slate-800 dark:text-white text-sm px-3 py-2 shadow-md whitespace-nowrap ${
             position === "top"
               ? "bottom-full left-1/2 transform -translate-x-1/2 mb-4"
               : "top-full left-1/2 transform -translate-x-1/2 mt-4"
@@ -34,8 +34,8 @@ const Tooltip = ({ children, content, position = "top" }) => {
             <div
               className={`w-0 h-0 border-x-8 border-x-transparent ${
                 position === "top"
-                  ? "border-t-8 border-t-gray-700"
-                  : "border-b-8 border-b-gray-700"
+                  ? "border-t-8 border-t-gray-600 dark:border-t-gray-500"
+                  : "border-b-8 border-b-gray-600 dark:border-b-gray-500"
               }`}
             ></div>
           </div>
